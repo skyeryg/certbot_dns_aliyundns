@@ -9,4 +9,4 @@
 
 -e acme
 -e .
--e certbot-dns-aliyun[docs]
+-e certbot-dns-aliyundns[docs]

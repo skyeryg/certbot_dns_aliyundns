@@ -1,5 +1,5 @@
-:mod:`certbot_dns_aliyun.dns_aliyun`
+:mod:`certbot_dns_aliyundns.dns_aliyundns`
 ----------------------------------------
 
-.. automodule:: certbot_dns_aliyun.dns_aliyun
+.. automodule:: certbot_dns_aliyundns.dns_aliyundns
    :members:

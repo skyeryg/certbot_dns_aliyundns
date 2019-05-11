@@ -1,16 +1,16 @@
-.. certbot-dns-aliyun documentation master file, created by
+.. certbot-dns-aliyundns documentation master file, created by
    sphinx-quickstart on Wed May 10 16:05:50 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to certbot-dns-aliyun's documentation!
+Welcome to certbot-dns-aliyundns's documentation!
 ================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: certbot_dns_aliyun
+.. automodule:: certbot_dns_aliyundns
    :members:
 
 .. toctree::

@@ -1,5 +1,5 @@
 """
-The `~certbot_dns_aliyun.dns_aliyun` plugin automates the process of
+The `~certbot_dns_aliyundns.dns_aliyundns` plugin automates the process of
 completing a ``dns-01`` challenge (`~acme.challenges.DNS01`) by creating, and
 subsequently removing, TXT records using the Aliyun DNS API.
 
@@ -8,9 +8,9 @@ Named Arguments
 ---------------
 
 ========================================  =====================================
-``--dns-aliyun-credentials``              Aliyun AccessKey credentials_ INI
+``--dns-aliyundns-credentials``              Aliyun AccessKey credentials_ INI
                                           file. (Required)
-``--dns-aliyun-propagation-seconds``      The number of seconds to wait for DNS
+``--dns-aliyundns-propagation-seconds``      The number of seconds to wait for DNS
                                           to propagate before asking the ACME
                                           server to verify the DNS record.
                                           (Default: 30)
@@ -29,11 +29,11 @@ credentials, obtained from your Aliyun RAM Console
    :caption: Example credentials file:
 
    # Aliyun AccessKey credentials used by Certbot
-   dns_aliyun_access_key = 12345678
-   dns_aliyun_access_key_secret = 1234567890abcdef1234567890abcdef
+   dns_aliyundns_access_key = 12345678
+   dns_aliyundns_access_key_secret = 1234567890abcdef1234567890abcdef
 
 The path to this file can be provided interactively or using the
-``--dns-aliyun-credentials`` command-line argument. Certbot records the path
+``--dns-aliyundns-credentials`` command-line argument. Certbot records the path
 to this file for use during renewal, but does not store the file's contents.
 
 .. caution::
@@ -59,8 +59,8 @@ Examples
    :caption: To acquire a certificate for ``example.com``
 
    certbot certonly \\
-     --dns-aliyun \\
-     --dns-aliyun-credentials ~/.secrets/certbot/aliyun.ini \\
+     --dns-aliyundns \\
+     --dns-aliyundns-credentials ~/.secrets/certbot/aliyundns.ini \\
      -d example.com
 
 .. code-block:: bash
@@ -68,8 +68,8 @@ Examples
              ``www.example.com``
 
    certbot certonly \\
-     --dns-aliyun \\
-     --dns-aliyun-credentials ~/.secrets/certbot/aliyun.ini \\
+     --dns-aliyundns \\
+     --dns-aliyundns-credentials ~/.secrets/certbot/aliyundns.ini \\
      -d example.com \\
      -d www.example.com
 
@@ -78,9 +78,9 @@ Examples
              for DNS propagation
 
    certbot certonly \\
-     --dns-aliyun \\
-     --dns-aliyun-credentials ~/.secrets/certbot/aliyun.ini \\
-     --dns-aliyun-propagation-seconds 60 \\
+     --dns-aliyundns \\
+     --dns-aliyundns-credentials ~/.secrets/certbot/aliyundns.ini \\
+     --dns-aliyundns-propagation-seconds 60 \\
      -d example.com
 
 """

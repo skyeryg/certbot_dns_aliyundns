@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# certbot-dns-aliyun documentation build configuration file, created by
+# certbot-dns-aliyundns documentation build configuration file, created by
 # sphinx-quickstart on Wed May 10 16:05:50 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -52,9 +52,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'certbot-dns-aliyun'
-copyright = u'2018, tengattack'
-author = u'tengattack'
+project = u'certbot-dns-aliyundns'
+copyright = u'2019, skyer'
+author = u'skyer'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -116,7 +116,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'certbot-dns-aliyundoc'
+htmlhelp_basename = 'certbot-dns-aliyundnsdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -143,7 +143,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'certbot-dns-aliyun.tex', u'certbot-dns-aliyun Documentation',
+    (master_doc, 'certbot-dns-aliyundns.tex', u'certbot-dns-aliyundns Documentation',
      u'Certbot Project', 'manual'),
 ]
 
@@ -153,7 +153,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'certbot-dns-aliyun', u'certbot-dns-aliyun Documentation',
+    (master_doc, 'certbot-dns-aliyundns', u'certbot-dns-aliyundns Documentation',
      [author], 1)
 ]
 
@@ -164,8 +164,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'certbot-dns-aliyun', u'certbot-dns-aliyun Documentation',
-     author, 'certbot-dns-aliyun', 'One line description of project.',
+    (master_doc, 'certbot-dns-aliyundns', u'certbot-dns-aliyundns Documentation',
+     author, 'certbot-dns-aliyundns', 'One line description of project.',
      'Miscellaneous'),
 ]
 

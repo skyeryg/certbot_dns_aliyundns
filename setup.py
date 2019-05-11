@@ -4,14 +4,14 @@ from setuptools import setup
 from setuptools import find_packages
 
 
-version = '0.23.0.dev0'
+version = '0.35.0.dev0'
 
 # Remember to update local-oldest-requirements.txt when changing the minimum
 # acme/certbot version.
 install_requires = [
-    'acme>=0.21.1',
-    'certbot>=0.21.1',
-    'dns-lexicon',
+    'acme>=0.31.0',
+    'certbot>=0.34.0',
+    'requests',
     'mock',
     'setuptools',
     'zope.interface',
@@ -23,12 +23,12 @@ docs_extras = [
 ]
 
 setup(
-    name='certbot-dns-aliyun',
+    name='certbot-dns-aliyundns',
     version=version,
     description="Aliyun DNS Authenticator plugin for Certbot",
-    url='https://github.com/tengattack/certbot-dns-aliyun',
+    url='https://github.com/skyeryg/certbot-dns-aliyundns',
     author="Certbot Project",
-    author_email='tengattack@gmail.com',
+    author_email='yang.skyer@gmail.com',
     license='Apache License 2.0',
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     classifiers=[
@@ -60,8 +60,8 @@ setup(
     },
     entry_points={
         'certbot.plugins': [
-            'dns-aliyun = certbot_dns_aliyun.dns_aliyun:Authenticator',
+            'dns-aliyundns = certbot_dns_aliyundns.dns_aliyundns:Authenticator',
         ],
     },
-    test_suite='certbot_dns_aliyun',
+    test_suite='certbot_dns_aliyundns',
 )

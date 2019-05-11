@@ -62,7 +62,7 @@ class Authenticator(dns_common.DNSAuthenticator):
         self._get_aliyundns_client().add_txt_record(domain, validation_name, validation, self.ttl)
 
     def _cleanup(self, domain, validation_name, validation):
-        self._get_alidyunns_client().del_txt_record(domain, validation_name, validation)
+        self._get_aliyundns_client().del_txt_record(domain, validation_name, validation)
 
     def _get_aliyundns_client(self):
         return _AliyunDNSClient(self.credentials.conf('access-key'), self.credentials.conf('access-key-secret'))

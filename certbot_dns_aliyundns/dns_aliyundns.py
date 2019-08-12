@@ -67,7 +67,7 @@ class _AliyunDNSClient():
     """
 
     def __init__(self, access_key, access_key_secret):
-        self._client = AcsClient(access_key, access_key_secret, 'default')
+        self._client = AcsClient(access_key, access_key_secret)
 
 
     def _find_domain_record_id(self, domain, rr = '', typ = '', value = ''):
